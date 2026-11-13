@@ -1,2 +1,8 @@
 
-    abstract fun siswaDao(): SiswaDao
+        private var Instance: DatabaseSiswa? = null
+
+
+            })
+        }
+    }
+}
