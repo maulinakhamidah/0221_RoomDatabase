@@ -1,5 +1,4 @@
 <resources>
 
-    <string name="required_field">Required field</string>
-
+    <string name="btn_submit">Submit</string>
 </resources>
