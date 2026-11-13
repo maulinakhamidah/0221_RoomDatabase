@@ -1,5 +1,5 @@
 <resources>
 
     <string name="delete">Delete</string>
-
+    <string name="update">Update</string>
 </resources>
