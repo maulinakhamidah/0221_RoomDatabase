@@ -1,5 +1,4 @@
 <resources>
 
-    <string name="alamat1">Alamat siswa</string>
-
+    <string name="telepon1">Telepon siswa</string>
 </resources>
