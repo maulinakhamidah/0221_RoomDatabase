@@ -45,6 +45,7 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.room3.common)
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
@@ -52,14 +53,10 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
-    // items
-    implementation(libs.compose.icons)
-    // room
-    implementation(libs.bundles.room
+    implementation(libs.config.icons)
+    implementation(libs.bundles.room)
     ksp(libs.room.compiler)
-    // viewmodel
     implementation(libs.lifecycle.viewmodel.compose)
-            implementation(libs.lifecycle.runtime.compose)
-     // navigasi
+    implementation(libs.lifecycle.runtime.compose)
     implementation(libs.navigation.compose)
 }
