@@ -1,4 +1,5 @@
 <resources>
 
-    <string name="telepon1">Telepon siswa</string>
+    <string name="required_field">Required field</string>
+
 </resources>
