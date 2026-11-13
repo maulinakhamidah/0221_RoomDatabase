@@ -1,5 +1,5 @@
 <resources>
 
-    <string name="deskripsi_no_item">Tidak ada data siswa. tap + untuk menambah data</string>
+    <string name="nama">nama siswa</string>
 
 </resources>
