@@ -1,4 +1,4 @@
-package com.example.a0221_roomdatabase
+package com.example.roomdatabase.room
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -7,7 +7,8 @@ import androidx.room.PrimaryKey
 data class Siswa(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
-    val name: String,
+    val nama: String,
     val alamat: String,
-    val telepon: String
+    val telpon: String
 )
+

@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.a0221_roomdatabase"
+    namespace = "com.example.roomdatabase"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.a0221_roomdatabase"
+        applicationId = "com.example.roomdatabase"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
@@ -45,7 +45,6 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.room3.common)
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
@@ -53,7 +52,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.compose.ui.tooling)
-    implementation(libs.config.icons)
+    implementation(libs.compose.icons)
     implementation(libs.bundles.room)
     ksp(libs.room.compiler)
     implementation(libs.lifecycle.viewmodel.compose)
