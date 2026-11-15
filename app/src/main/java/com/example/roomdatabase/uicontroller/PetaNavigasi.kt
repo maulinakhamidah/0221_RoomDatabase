@@ -16,8 +16,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.roomdatabase.R
-import com.example.roomdatabase.view.DestinasiEntry
-import com.example.roomdatabase.view.DestinasiHome
 import com.example.roomdatabase.view.EntrySiswaScreen
 import com.example.roomdatabase.view.HomeScreen
 
@@ -35,8 +33,7 @@ fun SiswaTopAppBar(
     scrollBehavior: TopAppBarScrollBehavior? = null,
     navigateUp: () -> Unit = {}
 ) {
-    CenterAlignedTopAppBar(
-        title = { Text(title) },
+    CenterAlignedTopAppBar(title = { Text(title) },
         modifier = modifier,
         scrollBehavior = scrollBehavior,
         navigationIcon = {
@@ -48,8 +45,7 @@ fun SiswaTopAppBar(
                     )
                 }
             }
-        }
-    )
+        })
 }
 
 @Composable
@@ -65,7 +61,7 @@ fun HostNavigasi(
         composable(DestinasiHome.route) {
             HomeScreen(
                 navigateToItemEntry = { navController.navigate(DestinasiEntry.route) },
-                onDetailClick = { /* Can be expanded for detail/edit */ }
+                onDetailClick = { /* Detail navigation if needed */ }
             )
         }
         composable(DestinasiEntry.route) {
@@ -76,4 +72,3 @@ fun HostNavigasi(
         }
     }
 }
-

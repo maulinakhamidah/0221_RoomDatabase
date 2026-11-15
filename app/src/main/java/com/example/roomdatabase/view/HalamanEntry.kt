@@ -24,6 +24,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.roomdatabase.R
+import com.example.roomdatabase.uicontroller.DestinasiEntry
 import com.example.roomdatabase.uicontroller.DestinasiNavigasi
 import com.example.roomdatabase.uicontroller.SiswaTopAppBar
 import com.example.roomdatabase.viewmodel.DetailSiswa
@@ -31,11 +32,6 @@ import com.example.roomdatabase.viewmodel.EntryViewModel
 import com.example.roomdatabase.viewmodel.PenyediaViewModel
 import com.example.roomdatabase.viewmodel.UIStateSiswa
 import kotlinx.coroutines.launch
-
-object DestinasiEntry : DestinasiNavigasi {
-    override val route = "item_entry"
-    override val titleRes = R.string.entry_siswa
-}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
