@@ -1,5 +1,7 @@
 
 
-    @Query("SELECT * from tblSiswa WHERE id = :id")
-    fun getSiswa(id: Int): Flow<Siswa>
 
+
+    @Query("SELECT * from tblSiswa ORDER BY nama ASC")
+    fun getAllSiswa(): Flow<List<Siswa>>
+}
