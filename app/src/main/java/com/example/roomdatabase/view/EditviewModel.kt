@@ -1,12 +1,9 @@
 
 
-
-    init {
-        viewModelScope.launch {
-            uiStateSiswa = repositoriSiswa.getSiswaStream(idSiswa)
-                .filterNotNull()
-                .first()
-                .toUiStateSiswa(isEntryValid = true)
-        }
+    fun updateUiState(detailSiswa: DetailSiswa) {
+        uiStateSiswa = UIStateSiswa(
+            detailSiswa = detailSiswa,
+            isEntryValid = validasiInput(detailSiswa)
+        )
     }
 
