@@ -15,8 +15,8 @@
     <string name="back">Back</string>
     <string name="yes">Yes</string>
     <string name="no">NO</string>
-    <string name="delete">Delete</string>
     <string name="update">Update</string>
     <string name="attention">Attention</string>
     <string name="tanya">Tanya</string>
+    <string name="delete">Delete</string>
 </resources>
